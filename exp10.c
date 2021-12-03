@@ -35,6 +35,10 @@ int main()
             check();
         }
     }
+    if (stk[0] == 'E' && stk[1] == '\0')
+        printf("Accept\n");
+    else
+        printf("Reject\n");
 }
 void check()
 {
