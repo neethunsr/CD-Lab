@@ -1,0 +1,8 @@
+
+MOV R0,a
+ADD R0,b
+MOV c,R0
+MOV R0,c
+MOV sum,R0
+MOV R0,c
+MOV sum,R0
