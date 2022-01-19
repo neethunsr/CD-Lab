@@ -44,10 +44,37 @@
 extern int yydebug;
 #endif
 
+/* Token type.  */
+#ifndef YYTOKENTYPE
+# define YYTOKENTYPE
+  enum yytokentype
+  {
+    TYPE = 258,
+    ID = 259,
+    RECORD = 260,
+    NUM = 261,
+    SPACE = 262
+  };
+#endif
+/* Tokens.  */
+#define TYPE 258
+#define ID 259
+#define RECORD 260
+#define NUM 261
+#define SPACE 262
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef int YYSTYPE;
+union YYSTYPE
+{
+#line 10 "check.y"
+
+    char *str; //Ptr to constant string (strings are malloc'd)
+
+#line 75 "y.tab.h"
+
+};
+typedef union YYSTYPE YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
