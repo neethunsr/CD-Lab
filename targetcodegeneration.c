@@ -43,7 +43,3 @@ void main()
     fclose(fp1);
     fclose(fp2);
 }
-/*
-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
-git push https://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@github.com/neethunsr/CD-Lab.git
-*/
