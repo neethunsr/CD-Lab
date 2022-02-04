@@ -1,0 +1,13 @@
+E->TA
+A->+TA|^
+T->FB
+B->*FB|^
+F->t|(E)
+
+E->E+T|T
+T->T*F|F
+F->(E)|i
+
+S->(L)|a
+L->SL'
+L'->,SL'|e
